@@ -1,1 +1,1 @@
-# curso-ibm
+# Statistics Python Project
