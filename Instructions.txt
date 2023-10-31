@@ -1,0 +1,28 @@
+Instrucciones imagen python
+
+crear la imagen a partir del Dockerfile:
+docker build -t statistics_python_app .
+
+levantar la primera vez el contenedor mapeando el volumen:
+docker run -it -v ./:/app --name statistics_container statistics_python_app
+
+parar el contenedor:
+docker stop statistics_container
+
+levantar el contenedor:
+docker start statistics_container
+
+entrar en la consola del contenedor:
+docker exec -it statistics_container /bin/bash
+
+para eliminar el contenedor y su volumen asociado:
+docker rm -v [container_name]
+
+EXTENSIONES PARA VSC
+docker de microsoft
+dev containers
+python de microsoft
+
+Para lo del usuario root y los permisos
+https://stackoverflow.com/questions/68673221/warning-running-pip-as-the-root-user
+
